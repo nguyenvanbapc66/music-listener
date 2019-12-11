@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nghệ sĩ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Jomolhari|Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styleArtist.css">
+    <script src="code-Detail.js"></script>
+
+    <style>
+        #myBtn {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Fixed/sticky position */
+            bottom: 20px;
+            /* Place the button at the bottom of the page */
+            right: 30px;
+            /* Place the button 30px from the right */
+            z-index: 99;
+            /* Make sure it does not overlap */
+            border: none;
+            /* Remove borders */
+            outline: none;
+            /* Remove outline */
+            background-color: red;
+            /* Set a background color */
+            color: white;
+            /* Text color */
+            cursor: pointer;
+            /* Add a mouse pointer on hover */
+            padding: 15px;
+            /* Some padding */
+            border-radius: 10px;
+            /* Rounded corners */
+            font-size: 18px;
+            /* Increase font size */
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+            /* Add a dark-grey background on hover */
+        }
+
+
+        /* css button back  */
+        .btn {
+            position: fixed;
+            top: 15px;
+            left: 20px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn btn-secondary" onclick="goBack()">Back</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+    <div class="container">
+        <h2>Nghệ sĩ</h2>
+
+        <ul class="nav nav-tabs">
+            <!-- Trang home -->
+            <!-- <li><a href="https://mp3.zing.vn">Home</a></li> -->
+            <!-- <li><button style="">Home</button></li> -->
+            <li class="active"><a data-toggle="tab" href="#menu1">Việt Nam</a></li>
+            <li><a data-toggle="tab" href="#menu2">Âu Mỹ</a></li>
+            <li><a data-toggle="tab" href="#menu3">Hàn Quốc</a></li>
+        </ul>
+
+        <div class="tab-content">
+
+            <div id="menu1" class="tab-pane fade in active">
+                <h3>Việt Nam</h3>
+                <div class="responsive">
+                    <div class="gallery">
+                        <!-- <button target="_blank"
+                            href="file:///C:/Users/ACER/Desktop/Project_MindX/Nghesi/DucPhuc_detail.html" <img
+                            src="https://i.imgur.com/hg6ukiT.jpg" class="rounded" width="400" height="400" /> -->
+                        <!-- dataset-artist-name='Sơn Tùng M-TP' onclick="xacDinh(event)"> -->
+                        <input type="image" src="https://i.imgur.com/hg6ukiT.jpg" class="rounded" width="100%"
+                            height="300" data-artist-name='Sơn Tùng M-TP' onclick="xacDinh(event)" />
+                        <!-- </button> -->
+                        <div class="desc">Sơn Tùng M-TP</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <input type="image" src="https://i.imgur.com/IcSyIaS.jpg" class="rounded" width="100%"
+                            height="300" data-artist-name='Soobin Hoàng Sơn' onclick="xacDinh(event)" />
+                        <div class="desc">Soobin Hoàng Sơn</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <input type="image" src="https://i.imgur.com/mnjWuCe.jpg" class="rounded" width="100%"
+                            height="300" data-artist-name='Phan Mạnh Quỳnh' onclick="xacDinh(event)" />
+                        <div class="desc">Phan Mạnh Quỳnh</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <input type="image" src="https://i.imgur.com/YiEHTFC.jpg" class="rounded" width="100%"
+                            height="300" data-artist-name='Binz' onclick="xacDinh(event)" />
+                        <div class="desc">Binz</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <input type="image" src="https://i.imgur.com/r5XhwSK.jpg" class="rounded" width="100%"
+                            height="300" data-artist-name='Đức Phúc' onclick="xacDinh(event)" />
+                        <div class="desc">Đức Phúc</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <input type="image" src="https://i.imgur.com/qX136WA.jpg" class="rounded" width="100%"
+                            height="300" data-artist-name='Miu Lê' onclick="xacDinh(event)" />
+                        <div class="desc">Miu Lê</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <input type="image" src="https://i.imgur.com/bVJiAgk.jpg" class="rounded" width="100%"
+                            height="300" data-artist-name='Lou Hoàng' onclick="xacDinh(event)" />
+                        <div class="desc">Lou Hoàng</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <input type="image" src="https://i.imgur.com/ds5H3wo.jpg" class="rounded" width="100%"
+                            height="300" data-artist-name='AMEE' onclick="xacDinh(event)" />
+                        <div class="desc">AMEE</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="menu2" class="tab-pane fade">
+                <h3>Âu Mỹ</h3>
+                <div class="responsive">
+                    <div class="gallery">
+                        <a onclick="alertError()">
+                            <img src="https://i.imgur.com/6mPrJXc.jpg" class="rounded" width="400" height="400">
+                        </a>
+                        <div class="desc">Adam Levine</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a onclick="alertError()">
+                            <img src="https://i.imgur.com/ihRWbsw.jpg" class="rounded" width="400" height="400">
+                        </a>
+                        <div class="desc">Taylor Swift</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a onclick="alertError()">
+                            <img src="https://i.imgur.com/54UMbqu.jpg" class="rounded" width="400" height="400">
+                        </a>
+                        <div class="desc">Ed Sheeran</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a onclick="alertError()">
+                            <img src="https://i.imgur.com/DQZDIJj.jpg" class="rounded" width="400" height="400">
+                        </a>
+                        <div class="desc">Alan Walker</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a onclick="alertError()">
+                            <img src="https://i.imgur.com/9Y4MjKV.jpg" class="rounded" width="400" height="400">
+                        </a>
+                        <div class="desc">Westlife</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a onclick="alertError()">
+                            <img src="https://i.imgur.com/DxiXZbO.jpg" class="rounded" width="400" height="400">
+                        </a>
+                        <div class="desc">TheFatRat</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a onclick="alertError()">
+                            <img src="https://i.imgur.com/nLn7ODH.jpg" class="rounded" width="400" height="400">
+                        </a>
+                        <div class="desc">Shayne Ward</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a onclick="alertError()">
+                            <img src="https://i.imgur.com/2abvqOp.jpg" class="rounded" width="400" height="400">
+                        </a>
+                        <div class="desc">Green Day</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="menu3" class="tab-pane fade">
+                <h3>Hàn Quốc</h3>
+                <div class="responsive">
+                    <div class="gallery">
+                        <a onclick="alertError()">
+                            <img src="https://i.imgur.com/SHchwMl.jpg" class="rounded" width="400" height="400">
+                        </a>
+                        <div class="desc">BIGBANG</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a onclick="alertError()">
+                            <img src="https://i.imgur.com/HSzdy5S.jpg" class="rounded" width="400" height="400">
+                        </a>
+                        <div class="desc">PSY</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a onclick="alertError()">
+                            <img src="https://i.imgur.com/CdLqNNq.jpg" class="rounded" width="400" height="400">
+                        </a>
+                        <div class="desc">Black Pink</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a onclick="alertError()">
+                            <img src="https://i.imgur.com/T4KFHrM.jpg" class="rounded" width="400" height="400">
+                        </a>
+                        <div class="desc">G-Dragon</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a onclick="alertError()">
+                            <img src="https://i.imgur.com/U9lUcds.jpg" class="rounded" width="400" height="400">
+                        </a>
+                        <div class="desc">BTS</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a onclick="alertError()">
+                            <img src="https://i.imgur.com/oEJG35U.jpg   " class="rounded" width="400" height="400">
+                        </a>
+                        <div class="desc">TWICE</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a onclick="alertError()">
+                            <img src="https://i.imgur.com/z4RsVsR.jpg" class="rounded" width="400" height="400">
+                        </a>
+                        <div class="desc">Bolbbalgan4</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a onclick="alertError()">
+                            <img src="https://i.imgur.com/QGcFKrG.jpg" class="rounded" width="400" height="400">
+                        </a>
+                        <div class="desc">EXO</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="CodeTbaoError.js"></script>
+    <script>
+        // function cua button to top 
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        //function back
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>

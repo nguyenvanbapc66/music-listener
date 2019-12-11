@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Detailed Artist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-Detail-Artist.css">
+
+  <style>
+    #myBtn {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Fixed/sticky position */
+      bottom: 20px;
+      /* Place the button at the bottom of the page */
+      right: 30px;
+      /* Place the button 30px from the right */
+      z-index: 99;
+      /* Make sure it does not overlap */
+      border: none;
+      /* Remove borders */
+      outline: none;
+      /* Remove outline */
+      background-color: red;
+      /* Set a background color */
+      color: white;
+      /* Text color */
+      cursor: pointer;
+      /* Add a mouse pointer on hover */
+      padding: 15px;
+      /* Some padding */
+      border-radius: 10px;
+      /* Rounded corners */
+      font-size: 18px;
+      /* Increase font size */
+    }
+
+    #myBtn:hover {
+      background-color: #555;
+      /* Add a dark-grey background on hover */
+    }
+
+
+    /* css button back  */
+
+    .btn {
+      /* display: inline; */
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      width: 5%;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- <script src="CodeBootstrap.js"></script> -->
+  <button class="btn btn-secondary" onclick="goBack()">Back</button>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+  <div class="container" id="container-artist-detail">
+    <div id="singer1-cover-boder"></div>
+    <br />
+    <br />
+    <div class="row">
+      <div class="col-12 col-sm-2">
+        <center id="singer1-ava-boder">
+        </center>
+      </div>
+      <div class="col-12 col-sm-10" style="font-size:medium;">
+        <h2 id="name"></h2>
+        <p id="real-name"></p>
+        <p id="birthday"></p>
+        <p id="nation"></p>
+      </div>
+    </div>
+
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#list">Bài hát</a></li>
+      <li><a data-toggle="tab" href="#info">Thông tin</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div id="list" class="tab-pane fade in active">
+        <h3>Danh sách bài hát</h3>
+        <center id="ds-bai-hat">
+
+        </center>
+      </div>
+  
+      <div id="info" class="tab-pane fade">
+        <div class="row">
+          <div class="col-12 col-sm-9">
+            <h3>Thông tin</h3>
+            <p id="infor"></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+</body>
+<script src="code-Detail-Artist.js"></script>
+<script>
+    // function cua button to top 
+    //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
+    //function back
+
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+
+</html>

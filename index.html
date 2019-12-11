@@ -1,0 +1,318 @@
+<html>
+<title>Trang Chủ</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="index.css">
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="pUCV">
+
+        <div id="popUp" style="align-content: center">
+
+            <img src="./CRI/cri.jpg" alt="copyright infringe">
+            <br>
+            <span class="cri">Vì lý do bản quyền, một vài Video sẽ không thể xem trực tiếp trên trang web này, hãy truy cập Youtube trực tiếp để xem trong trường hợp bạn không xem được
+                        </span>
+            <span id="dismiss"><  Click to dismiss  ></Click></span>
+
+
+        </div>
+
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+
+
+                <div class="modal-body">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" allowfullscreen="allowfullscreen" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="body1"></div>
+
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+            <a href="#home" class="w3-bar-item w3-button"><b>MUSIC</b> Listener</a>
+            <!-- Float links to the right. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="#Home" class="w3-bar-item w3-button">Trang Chủ</a>
+                <a href="#BXH" class="w3-bar-item w3-button">Bảng Xếp Hạng</a>
+                <a href="#TL" class="w3-bar-item w3-button">Thể Loại</a>
+                <a href="#NS" class="w3-bar-item w3-button">Nghệ Sỹ</a>
+                <a class="w3-bar-item searchText">Tìm Kiếm</a>
+                <input id="searchBox" type="text" placeholder="Search..">
+            </div>
+        </div>
+    </div>
+
+    <!-- Feeling Section -->
+    <div class="w3-container w3-padding-32" id="Home">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Chọn Cảm Xúc Của Bạn</h3>
+        <p>Lắng nghe cảm xúc bằng những giai điệu
+        </p>
+    </div>
+
+    <div class="w3-row-padding emoticon">
+        <div id="emo1" class="w3-col l3 m6 w3-margin-bottom vungChon" onclick="emo1()">
+            <div class="w3-display-container ">
+                <div class="w3-display-topleft w3-black w3-padding ">I am so angry</div>
+                <img src="./CRI/1.png " style="width:100% ">
+            </div>
+        </div>
+        <div id="emo2" class="w3-col l3 m6 w3-margin-bottom vungChon" onclick="emo2()">
+            <div class="w3-display-container ">
+                <div class="w3-display-topleft w3-black w3-padding ">Cry a river</div>
+                <img src="./CRI/2.png " style="width:100% ">
+            </div>
+        </div>
+        <div id="emo3" class="w3-col l3 m6 w3-margin-bottom vungChon" onclick="emo3()">
+            <div class="w3-display-container ">
+                <div class="w3-display-topleft w3-black w3-padding ">Love in the eyes</div>
+                <img src="./CRI/3.png " style="width:100% ">
+            </div>
+        </div>
+        <div id="emo4" class="w3-col l3 m6 w3-margin-bottom vungChon" onclick="emo4()">
+            <div class="w3-display-container ">
+                <div class="w3-display-topleft w3-black w3-padding ">Nothing</div>
+                <img src="./CRI/4.png " style="width:100% ">
+            </div>
+        </div>
+    </div>
+
+    <div id="emo5" class="w3-row-padding emoticon ">
+        <div class="w3-col l3 m6 w3-margin-bottom vungChon" onclick="emo5()">
+            <div class="w3-display-container ">
+                <div class="w3-display-topleft w3-black w3-padding ">So cool so high</div>
+                <img src="./CRI/5.png " style="width:100% ">
+            </div>
+        </div>
+        <div id="emo6" class="w3-col l3 m6 w3-margin-bottom vungChon" onclick="emo6()">
+            <div class="w3-display-container ">
+                <div class="w3-display-topleft w3-black w3-padding ">We are electric</div>
+                <img src="./CRI/6.png " style="width:100% ">
+            </div>
+        </div>
+        <div id="emo7" class="w3-col l3 m6 w3-margin-bottom vungChon" onclick="emo7()">
+            <div class="w3-display-container ">
+                <div class="w3-display-topleft w3-black w3-padding ">I am just a baby lol</div>
+                <img src="./CRI/7.png " style="width:100% ">
+            </div>
+        </div>
+        <div id="emo8" class="w3-col l3 m6 w3-margin-bottom vungChon" onclick="emo8()">
+            <div class="w3-display-container ">
+                <div class="w3-display-topleft w3-black w3-padding ">Ha Ha Funny</div>
+                <img src="./CRI/8.png " style="width:100% ">
+            </div>
+        </div>
+    </div>
+    <!-- Page content -->
+    <div class="w3-content w3-padding " style="max-width:1564px ">
+
+        <!-- BXH Section -->
+        <div class="w3-container w3-padding-32 " id="BXH">
+            <a href="./BangXepHang.html ">
+
+                <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 ">Bảng Xếp Hạng</h3>
+            </a>
+            <p>Thưởng thức các bản nhạc top Trending trên Youtube.
+            </p>
+        </div>
+
+        <a href="./BangXepHang.html">
+            <div class="w3-row-padding ">
+                <div class="w3-col l3 m6 w3-margin-bottom ">
+                    <div class="w3-display-container ">
+                        <div class="w3-display-topleft w3-black w3-padding ">Top1</div>
+                        <img id="100 " alt="Top1 " style="width:100% ">
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom ">
+                    <div class="w3-display-container ">
+                        <div class="w3-display-topleft w3-black w3-padding ">Top2</div>
+                        <img id="101 " alt="Top2 " style="width:100% ">
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom ">
+                    <div class="w3-display-container ">
+                        <div class="w3-display-topleft w3-black w3-padding ">Top3</div>
+                        <img id="102 " alt="Top3 " style="width:100% ">
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom ">
+                    <div class="w3-display-container ">
+                        <div class="w3-display-topleft w3-black w3-padding ">Top4</div>
+                        <img id="103 " alt="Top4 " style="width:100% ">
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-row-padding ">
+                <div class="w3-col l3 m6 w3-margin-bottom ">
+                    <div class="w3-display-container ">
+                        <div class="w3-display-topleft w3-black w3-padding ">Top5</div>
+                        <img id="104 " alt="Top5 " style="width:99% ">
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom ">
+                    <div class="w3-display-container ">
+                        <div class="w3-display-topleft w3-black w3-padding ">Top6</div>
+                        <img id="105 " alt="Top6 " style="width:99% ">
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom ">
+                    <div class="w3-display-container ">
+                        <div class="w3-display-topleft w3-black w3-padding ">Top7</div>
+                        <img id="106 " alt="Top7 " style="width:99% ">
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom ">
+                    <div class="w3-display-container ">
+                        <div class="w3-display-topleft w3-black w3-padding ">Top8</div>
+                        <img id="107 " alt="Top8 " style="width:99% ">
+                    </div>
+                </div>
+            </div>
+        </a>
+        <!-- The Loai Section -->
+        <div class="w3-container w3-padding-32 " id="TL">
+            <a href="./genre.html ">
+                <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 ">Thể Loại</h3>
+            </a>
+            <p>Thưởng thức các bản nhạc theo thể loại
+            </p>
+        </div>
+
+        <div class="w3-row-padding w3-grayscale ">
+            <div class="w3-col l3 m6 w3-margin-bottom ">
+                <img src="./CRI/edm.jpg" alt="Jane " style="width:100% ">
+                <h3>EDM</h3>
+                <p class="w3-opacity ">Năng động</p>
+                <p>Quẩy hết mình với những bản nhạc xập xình tràn đầy năng lượng</p>
+                <a href="./genre_EDM.html"><button class="w3-button w3-light-grey w3-block ">Click to go inside</button></a>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom ">
+                <img src="./CRI/acoustic.jpg" alt="John " style="width:100% ">
+                <h3>Acoustic</h3>
+                <p class="w3-opacity ">Trong trẻo</p>
+                <p>Đắm mình vào những âm thanh giản dị của những bản nhạc Acoustic thô mộc</p>
+                <a href="./genre_acoustic.html"><button class="w3-button w3-light-grey w3-block " >Click to go inside</button></a>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom ">
+                <img src="./CRI/indie.jpg" alt="Mike " style="width:100% ">
+                <h3>Indie</h3>
+                <p class="w3-opacity ">Lắng đọng</p>
+                <p>Đắm mình vào những cảm xúc tinh tế của những tác giả bán chuyên</p>
+                <a href="./genre_indie.html"><button class="w3-button w3-light-grey w3-block ">Click to go inside</button></a>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom ">
+                <img src="./CRI/classic.jpg" alt="Dan " style="width:100% ">
+                <h3>Nhạc không lời</h3>
+                <p class="w3-opacity ">Sự im lặng hoàn hảo</p>
+                <p>Bạn nghĩ rằng mình cần sự thư thái nhất, hay lắng nghe nhạc không lời</p>
+                <a href="./genre_nhacKhongLoi.html"><button class="w3-button w3-light-grey w3-block ">Click to go inside</button></a>
+            </div>
+        </div>
+
+        <!-- Nghe sy Section -->
+        <div class="w3-container w3-padding-32 " id="NS">
+            <a href="./Website Music/DanhSachNgheSi.html">
+                <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 ">Nghệ Sỹ</h3>
+            </a>
+            <p>Tìm hiểu thông tin và lắng nghe âm nhạc của các nghệ sỹ </p>
+
+        </div>
+
+        <!-- Image of location/map -->
+        <div class="w3-container ">
+            <a href="./Website Music/DanhSachNgheSi.html">
+                <div class="w3-row-padding ">
+                    <div class="w3-col l3 m6 w3-margin-bottom ">
+                        <div class="w3-display-container ">
+
+                            <img src="./CRI/casy/b41fcb28033b62bc6671ca1b103eb97a.jpg" style="width:100% ">
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom ">
+                        <div class="w3-display-container ">
+                            <img src="./CRI/casy/BeyonceIASFbeyonce327002491280960.jpg" style="width:100% ">
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom ">
+                        <div class="w3-display-container ">
+                            <img src="./CRI/casy/hq.jpg" style="width:100% ">
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom ">
+                        <div class="w3-display-container ">
+                            <img src="./CRI/casy/hq2.png" style="width:100% ">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-row-padding ">
+                    <div class="w3-col l3 m6 w3-margin-bottom ">
+                        <div class="w3-display-container ">
+                            <img src="./CRI/casy/n2(6).jpg" style="width:99% ">
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom ">
+                        <div class="w3-display-container ">
+                            <img src="./CRI/casy/sontung.jpg" style="width:99% ">
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom ">
+                        <div class="w3-display-container ">
+                            <img src="./CRI/casy/soobin.jpg" style="width:99% ">
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom ">
+                        <div class="w3-display-container ">
+                            <div class="w3-display-topleft w3-black w3-padding "></div>
+                            <img src="./CRI/casy/vn.jpg" style="width:99% ">
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+    <div class="footer">
+        <p>© 2019 Copyright: Nhóm 2 - J4EK47</p>
+        <p>Cám ơn đã ghé thăm</p>
+    </div>
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js "></script>
+    <script src="index.js "></script>
+</body>
+
+</html>

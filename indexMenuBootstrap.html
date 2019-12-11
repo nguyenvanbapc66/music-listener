@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            position: relative;
+        }
+
+    .content{
+        font-size: x-large;
+        font-family: 'Times New Roman'
+    }
+
+    #section1{
+        background: linear-gradient(to right, #56ccf2, #2f80ed);
+    }
+    
+    #section2{
+        background: linear-gradient(to right, #36d1dc, #5b86e5);
+    }
+    
+    #section3{
+        background: linear-gradient(to right, #1c92d2, #f2fcfe);
+        }
+
+    #section4{
+        background: linear-gradient(to right, #b2fefa, #0ed2f7);
+    }
+
+    .col-12,.col-sm-6{
+        font-family: 'Times New Roman';
+        font-size: larger;
+
+
+    }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <ul class="navbar-nav">
+            <!-- <li class="nav-item"> 
+        <img src="https://images-platform.99static.com/QgWroToYGYDFoonPIqGGfa49VaQ=/0x0:970x970
+        /fit-in/900x675/99designs-contests-attachments/93/93568/attachment_93568347" 
+        alt="penguin-logo">
+    </li> -->
+            <li class="nav-item">
+                <a class="nav-link" href="#section1">Sơn Tùng M-TP</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section2">Soobin Hoàng Sơn</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section3">Phan Mạnh Quỳnh</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section4">Binz</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="container" style="padding: 0px 100px;">
+        <div id="section1" class="container-fluid " style="padding-top:70px;padding-bottom:70px">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Son_Tung_M-TP_2_%282017%29.png"
+                        width="100%" ; height="auto">
+                    <h1 id="singer1" style="text-align:center">Sơn Tùng M-TP</h1>
+                </div>
+                <div class="col-12 col-sm-6" style="font-size:x-large;">
+                    <p > Sinh ra và lớn lên tại một vùng quê của tỉnh Thái Bình. Vốn sở hữu “gen di truyền” từ người
+                        mẹ của mình, một nghệ sĩ biểu diễn hát chèo tại Nhà hát Thái Bình nên Tùng đã bộc lộ khả năng âm
+                        nhạc của mình ngay từ khi còn là một cậu bé mới chập chững những bước đi đầu tiên.
+                        <p>
+                        Năm 2012, Sơn Tùng quyết định thi tuyển vào Nhạc viện TPHCM, một trong những ngôi trường có
+                        tỉ lệ chọi vô cùng “khốc liệt”.Mặc dù giọng hát của Sơn Tùng không có một chút kỹ thuật nào
+                        nhưng chỉ với một tháng luyện thi chăm chỉ, quên cả việc ăn ngủ, Sơn Tùng đã đỗ thủ khoa Nhạc viện
+                        TPHCM chuyên ngành Thanh nhạc với số điểm 25,5.
+                        </p>
+                        Ít năm sau, những sản phẩm âm nhạc liên tiếp được chàng trai gốc Thái Bình tung ra thị
+                        trường như “Em của ngày hôm qua”, “Chạy ngay đi”, “Lạc trôi”,… đã trở thành những sản phẩm đình đám
+                        nhất của thị trường âm nhạc Việt Nam, ngoài ra những sản phẩm này cũng lan tỏa sang cả một
+                        số quốc gia khác trên thế giới.
+                    </p>
+                </div>
+
+                <div><strong onclick="getInformation1()" class="btn btn-primary">Bấm vào để hiện 20 Bài hát trending của ca sĩ này </strong>
+                    <div id="list-videos1" style="border-collapse: collapse;">
+
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div id="section2" class="container-fluid" style="padding-top:70px;padding-bottom:70px;">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <img src="https://nguoi-noi-tieng.com/photo/tieu-su-ca-si-soobin-hoang-son-4725.jpg" width="100%" ;
+                        height="auto">
+                    <h1 id="singer2" style="text-align: center;">Soobin Hoàng Sơn</h1>
+                </div>
+                <div class="col-12 col-sm-6" style="font-size:x-large;">
+                    <p class="content">
+                        Tên thật: Nguyễn Hoàng Sơn <p>Ngày sinh: 10/09/1992</p>
+                        <p>Quốc Gia: Việt Nam</p>
+
+                        Là một ca sĩ, nhạc sĩ và rapper trẻ đang được nhiều người yêu mến và Soobin hiện là ca sĩ của
+                        SpaceSpeakers Music Productionz. Tuy Hoàng Sơn sinh ra và lớn lên ở Hà Nội nhưng anh lại tập
+                        trung phát triển sự nghiệp ca hát của mình hơn trong những năm gần đây tại Tp. HCM.
+                        Sở trường của Soobin Hoàng Sơn là các ca khúc R&B, thế nhưng mới đây nam ca sĩ Hà Thành này lại
+                        khiến khán giả không khỏi bất ngờ khi phát hành ca khúc mang phong cách pop ballad có tựa đề
+                        "Phía sau một cô gái", một sáng tác của nữ ca nhạc sĩ Tiên Cookie - Đánh dấu một nét nổi bật mới
+                        dành cho nam ca sĩ này. Không chỉ đổi mới về phong cách âm nhạc, Soobin Hoàng Sơn còn trau chuốt
+                        về hình ảnh lẫn giọng hát trong sản phẩm âm nhạc mới này. Bài hát này còn là một trong những bài
+                        hát được nghe nhiều nhất tại Việt Nam trong năm 2016. Tính đến ngày 10 tháng 10 năm 2017, bản
+                        Audio chính thức đã thu hút được 238,971,037 lượt nghe trên Zing Mp3.
+
+                    </p>
+                </div>
+                <div><strong onclick="getInformation2()" class="btn btn-primary">Bấm vào để hiện 20 Bài hát trending của ca sĩ này </strong>
+                    <div id="list-videos2" style="border-collapse: collapse;">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section3" class="container-fluid " style="padding-top:70px;padding-bottom:70px">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <img src="https://yt3.ggpht.com/a/AGF-l7-__gNq9VqwbnUnA53NqgSPtg-Tti6WWYHwGA=s900-c-k-c0xffffffff-no-rj-mo" width="100%";
+                    height="auto">
+            <h1 id="singer3" style="text-align: center;">Phan Mạnh Quỳnh</h1>
+                </div>
+            <div class="col-12 col-sm-6" style="font-size:x-large;">
+                <p class="content">
+                    Tên thật: Phan Mạnh Quỳnh<p> Ngày sinh: 10/01/1990</p> <p>Quốc Gia: Việt Nam</p>
+                    Phan Mạnh Quỳnh sinh ra và lớn lên ở xóm Đồng Hà, xã Diễn Vạn, huyện Diễn Châu, tỉnh Nghệ An. 
+                    Từ nhỏ, Phan Mạnh Quỳnh có đam mê sáng tác nhạc. Năm 2009, Phan Mạnh Quỳnh đậu Trường Đại học Công nghiệp Thành phố Hồ Chí Minh và vào Thành phố Hồ Chí Minh để học tập. Phan Mạnh Quỳnh là tác giả của nhiều bản hit mà ca sĩ Ưng Hoàng Phúc, Khởi My, Hồ Quang Hiếu, Miu Lê... từng thể hiện. Không chỉ sáng tác, anh còn được cộng đồng mạng yêu mến khi tự thể hiện các ca khúc của mình với chất giọng lạ, trầm ấm và gần gũi với cuộc sống như "Người yêu cũ", "Nước ngoài", "Bước qua thế giới", "Mất hy vọng", "Khi phải quên đi"... Tháng 9 năm 2015, Phan Mạnh Quỳnh phát hành album Vợ người ta và thành công lớn với ca khúc chủ đề cùng tên đã trở thành một hiện tượng trong năm 2015. Ca khúc "Vợ người ta" đã lập kỷ lục đạt 6 triệu lượt nghe chỉ sau 2 tuần phát hành (chỉ tính riêng trên một trang nhạc trực tuyến), đứng Top 5 cho ba hạng mục giải thưởng của Zing Music Awards: Ca khúc của năm, Album của năm và Music Video của năm. 
+                    Tính đến tháng 12 năm 2015, "Vợ người ta" đã cán mốc 100 triệu lượt nghe và 32 triệu lượt xem trên kênh âm nhạc trực tuyến. Ca khúc Vợ người ta được ca sĩ trình bày lại trong tập 7, chương trình Hội ngộ danh hài năm 2016.
+                    Năm 2016, Phan Mạnh Quỳnh đã sáng tác và biểu diễn bài hát mới "Hồi Ức" trong chương trình Sing My Song (Bài Hát Hay Nhất) Tập 7. 
+                    Với bài hát Vợ người ta đã giúp Phan Mạnh Quỳnh nhận các giải thưởng: 
+                    <ul>
+                        <li>Tại lễ trao giải Zing Music Awards 2015. </li> 
+                        <li>Ca khúc Soul/R&B được yêu thích nhất. </li> 
+                        <li>Ca khúc được chia sẻ nhiều nhất cộng đồng mạng. </li> 
+                    </ul>
+                    Tại chương trình Vietnam Top Hits 2015: 
+                    <ul>
+                        <li>Top năm ca khúc của năm. </li> 
+                        <li>Hiện tượng âm nhạc 2015.</li> 
+                    </ul>
+                       
+                </p>
+
+            </div>  
+
+            <div><strong onclick="getInformation3()" class="btn btn-primary">Bấm vào để hiện 20 Bài hát trending của ca sĩ này </strong>
+                <div id="list-videos3" style="border-collapse: collapse;">
+
+                </div>
+            </div>  
+
+
+            </div>
+        </div>
+
+        <div id="section4" class="container-fluid " style="padding-top:70px;padding-bottom:70px">
+           <div class="row">
+               <div class="col-12 col-sm-6">
+                   <img src="https://yt3.ggpht.com/a/AGF-l7-inaWNBXFhWOJfCvrsB9HCsgxdnVeiUWFY6w=s900-c-k-c0xffffffff-no-rj-mo" width="100%"; height="auto">
+                    <h1 id="singer4" style="text-align: center;">Binz</h1>
+               </div>
+
+               <div class="col-12 col-sm-6" style="font-size:x-large;">
+                   <p class="content">
+                        Tên thật: Lê Nguyễn Trung Đan    <p>Ngày sinh: 24/05/1988</p>    <p>Quốc Gia: Việt Nam</p>
+                        Tham gia cộng đồng underground Việt từ năm 2008, Binz đã từng là artist của một số diễn đàn rap như Midsiderap, GVR. Được biết tới rộng rãi hơn trong năm 2010 với mixtape ”M-da Legend” & những sản phẩm đáng chú ý kết hợp với rapper Cá Chép của Vietdreamerz, người nghe rap nhớ tới Binz là một artist trẻ miền Trung có giọng hát ngọt ngào, kĩ thuật tốt và luôn mới mẻ. Các album của anh: Nếu Như Là Định Mệnh - Bin , Hoài Lâm Sau Mỗi Đêm Dài - JC Hưng , Binz (2017) Cơn Mưa Cuối (Single) Hoa Hồng Dại - Binz , KanDy , Ken Tamz Tết Này Con Về - Isaac Thái , Binz Chỉ Còn Mình Anh (Single) (2016) Tát Nước Đầu Đình (Single) Điều Bí Mật (Single)-ItsLee , Binz 
+                        Những Bài Hát Hay Nhất Của Binz:
+                         (2015) Bâng Khuâng (Rap Version) (Single) - JustaTee , 
+                         Binz (2014) Crying Over You (Single) JustaTee , Binz (2013) Nếu Như Là Định Mệnh - Hoài Lâm ft. Binz (2017) HOA HỒNG DẠI - Binz(2017)
+                   </p>
+               </div>
+
+               
+                <div><strong onclick="getInformation4()" class="btn btn-primary">Bấm vào để hiện 20 Bài hát trending của ca sĩ này </strong>
+                    <div id="list-videos4" style="border-collapse: collapse;">
+                    </div>
+                </div>  
+           
+        </div>
+        </div>
+
+        <!-- <div id="section41" class="container-fluid bg-danger" style="padding-top:70px;padding-bottom:70px">
+                <h1>Section 4 Submenu 1</h1>
+                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section
+                    and
+                    look at the navigation bar while scrolling!</p>
+                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section
+                    and
+                    look at the navigation bar while scrolling!</p>
+            </div>
+            <div id="section42" class="container-fluid bg-info" style="padding-top:70px;padding-bottom:70px">
+                <h1>Section 4 Submenu 2</h1>
+                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section
+                    and
+                    look at the navigation bar while scrolling!</p>
+                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section
+                    and
+                    look at the navigation bar while scrolling!</p>
+            </div> -->
+    </div>
+    <p> Xlarge</p>
+    <script src="CodeBootstrap.js"></script>
+</body>
+
+</html>

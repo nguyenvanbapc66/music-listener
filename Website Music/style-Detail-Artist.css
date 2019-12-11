@@ -1,0 +1,33 @@
+.container{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#singer1-cover-boder{
+    width: 100%; 
+    height: "auto"; 
+}
+
+#singer1-ava-boder{
+    width: 100px; 
+    height: 100px;
+    border-radius: 5px; 
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.spacing{
+    margin: 10px 10px;
+}
+.related-artist{
+    width: 80px; 
+    height: 80px;
+    border-radius: 50px;
+}
+.font-style{
+    font-style: normal;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#infor{
+    font-size: large;
+}

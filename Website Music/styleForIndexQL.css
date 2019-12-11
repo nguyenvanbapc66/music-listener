@@ -1,0 +1,138 @@
+/* Thanh menu */
+.app-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #fafbfc;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    z-index: 10;
+    transition: all .2s;
+    padding-left: 10px;
+    box-shadow: rgba(4, 9, 20, 0.03) 0px 0.46875rem 2.1875rem, rgba(4, 9, 20, 0.03) 0px 0.9375rem 1.40625rem, rgba(4, 9, 20, 0.05) 0px 0.25rem 0.53125rem, rgba(4, 9, 20, 0.03) 0px 0.125rem 0.1875rem;
+}
+
+.app-main{
+    flex: 1;
+    display: flex;
+    z-index: 8;
+    position: relative;
+    padding-top: 60px;
+
+}
+.brand{
+    padding: 10px 0px;
+    background-color: brown;
+}
+
+.table{
+    /* padding-top: 500px ; */
+    border-collapse: collapse;
+    width: 100%;
+    font-family: arial, sans-serif;
+}
+
+td, th {
+   text-align:left;
+    padding: 8px;
+  }
+  
+
+.nav-link{
+    margin-left:10px;
+}
+
+.chuc-nang{
+    margin-bottom: 10px;
+}
+
+.container{
+    background: rgba(255, 255, 255, 0.45);
+}
+
+.form-control{
+    margin-top: 10px;
+    width:80%;
+}
+
+.input-group-btn{
+    padding-top:10px
+}
+
+.input-group{
+    padding-bottom: 10px;
+}
+
+.video-id,.thumbnail,.vid-ids,.anh-vid{
+   /* visibility: hidden; */
+   text-align: justify;
+   display: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* The Modal (background) */
+  .modal,.modal2 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .modal-content,.modal-content2 {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    margin-left: 400px;
+    margin-top: 200px;
+  }
+
+  /* The Close Button */
+  .close,.close2 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+  .rounded{
+    width: 50px;
+    height: 50px;
+  }
+
+  .anh-thumbnail{
+    width: 80%;
+    height: 250px;
+    padding-left: 120px;
+  }

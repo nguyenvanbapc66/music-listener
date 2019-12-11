@@ -1,0 +1,33 @@
+#tieu-su{
+    text-align: justify;
+    width: auto;
+    margin-top: auto;
+    
+}
+
+.button{
+    border-style: none;
+    background-color: unset;
+    font-size: larger;
+}
+
+#container {
+    width: 80%;
+}
+
+#home{
+    background-color: transparent;
+    text-decoration: none; 
+    color: unset;
+}
+
+#container{
+    font-family:'Times New Roman';
+    font-size: larger;
+}
+
+#videos{
+    border-collapse: collapse ;
+    border-image: auto;
+    border-color: solid black;
+}

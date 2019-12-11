@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #list-videos{               /* để các videos hiển thị theo cùng dòng block */
+            display:inline-block;
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></head>
+
+<body>
+    <div id="container">
+        <input type="text" id="search-box" placeholder="Search What U Want" />
+
+        <button type="button" class="btn btn-primary" onclick="sendRequestToYoutube()" >Search</button>
+        <br/>
+        
+        <div>
+           <strong >Danh sách video tìm được :</strong> 
+           <div id="list-videos"></div>
+           
+        </div>
+    </div>
+
+        <!-- <iframe title='YouTube video player' width='640' height='390' src=" https://www.youtube.com/embed/tCzvYMW-jO8"
+        frameborder='0' allowFullScreen></iframe> -->
+
+    <script src="codeSearch-Logic.js"></script>
+
+</body>
+</html>

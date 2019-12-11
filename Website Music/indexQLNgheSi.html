@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Trang quản lý nghệ sĩ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img width="50px"; height="50px" src="https://images-platform.99static.com/QgWroToYGYDFoonPIqGGfa49VaQ=/0x0:970x970/fit-in/900x675/99designs-contests-attachments/93/93568/attachment_93568347">
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a onclick="themNgheSi()">Thêm</a></li>
+      <li><a onclick="suaInfor()">Sửa</a></li>
+      <li><a onclick="xoa()">Xóa</a></li>
+    </ul>
+        <form class="form-inline my-2 my-lg-0" >
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+  </div>
+</nav>
+  
+<div class="container">
+  <h3>Danh sách nghệ sĩ hiện có:</h3>
+  <div class="input-group">
+      <input type="text" class="form-control" placeholder="Your text field..."> <-- Text field
+      <div class="input-group-btn">
+          <button type="button" class="btn btn-default">Your button</button> <-- Inline button
+      </div>
+  </div>
+  <p id="ds-nghe-si">A navigation bar is a navigation header that is placed at the top of the page.</p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="codeQLNgheSi.js"></script>
+</body>
+</html>

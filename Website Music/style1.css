@@ -1,0 +1,9 @@
+.singer1-cover-boder{
+    width: 100%; 
+    height: "auto"; 
+}
+.singer1-ava-boder{
+    width: 100px; 
+    height: 100px;
+    border-radius: 5px; 
+}

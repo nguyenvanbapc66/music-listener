@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Thể loại</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="genre.css">
+
+</head>
+
+<body>
+    <div class="body1"></div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="image">
+        <span class="button-fixed">
+            <button class="button btn btn-secondary" onclick="goBack()">Back</button>
+        </span>
+        <div class="menu-genre">
+            <br>
+            <br>
+            <h2 class="text-genre">
+                <a href="genre_EDM.html">
+                    <img width="20px" height="20px" src="data:image/png;base64,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">
+                    <span class="list">EDM</span>
+                </a>
+                <hr id="line">
+            </h2>
+            <div class="menu-genre-inner">
+                <div class="menu-list">
+                    <ul style="list-style:none">
+                        <li>
+                            <div class="videothumbnail">
+                                <span data-toggle="tooltip" data-placement="top" title="Click to listen on youtube">
+                                    <img class="thumbnail vungChon" data-toggle="modal" data-target="#myModal" src="https://i.ytimg.com/vi/zdHL5BJfxPQ/hqdefault.jpg" alt="HÃY TRAO CHO ANH" data-id="zdHL5BJfxPQ">
+                                    <div class="desc vungChon" target="_top" data-toggle="modal" data-target="#myModal" data-id="zdHL5BJfxPQ">HÃY TRAO CHO ANH</div>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="videothumbnail">
+                                <span data-toggle="tooltip" data-placement="top" title="Click to listen on youtube">
+                                    <img class="thumbnail vungChon" data-toggle="modal" data-target="#myModal" src="https://i.ytimg.com/vi/egf7uIq6SvQ/hqdefault.jpg" alt="SÀI GÒN ĐẸP LẮM" data-id="egf7uIq6SvQ">
+                                    <div class="desc vungChon" target="_top" data-toggle="modal" data-target="#myModal" data-id="egf7uIq6SvQ">SÀI GÒN ĐẸP LẮM</div>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="videothumbnail">
+                                <span data-toggle="tooltip" data-placement="top" title="Click to listen on youtube">
+                                    <img class="thumbnail vungChon" data-toggle="modal" data-target="#myModal" src="https://i.ytimg.com/vi/tvlC-60aI9g/hqdefault.jpg" alt="QUÁ LÂU" data-id="tvlC-60aI9g">
+                                    <div class="desc vungChon" target="_top" data-toggle="modal" data-target="#myModal" data-id="tvlC-60aI9g">QUÁ LÂU</div>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="videothumbnail">
+                                <span data-toggle="tooltip" data-placement="top" title="Click to listen on youtube">
+                                    <img class="thumbnail vungChon" data-toggle="modal" data-target="#myModal" src="https://i.ytimg.com/vi/UMGzrOpsQe0/hqdefault.jpg" alt="TỪNG YÊU" data-id="UMGzrOpsQe0">
+                                    <div class="desc vungChon" target="_top" data-toggle="modal" data-target="#myModal" data-id="UMGzrOpsQe0">TỪNG YÊU</div>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="menu-genre">
+            <h2 class="text-genre">
+                <a href="genre_acoustic.html">
+                    <img width="25px" height="25px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVYmNBUHcZeuXz4zARGAyDL3WVwPB3BRP-Nej2oydwlNoIYXGN">
+                    <span class="list">ACOUSTIC</span>
+                </a>
+                <hr id="line">
+            </h2>
+            <div class="menu-genre-inner">
+                <div class="menu-list">
+                    <ul style="list-style:none">
+                        <li>
+                            <div class="videothumbnail">
+                                <span data-toggle="tooltip" data-placement="top" title="Click to listen on youtube">
+                                    <img class="thumbnail vungChon" data-toggle="modal" data-target="#myModal" src="https://i.ytimg.com/vi/lGbzyKWkiio/hqdefault.jpg" alt="TÌNH ĐƠN PHƯƠNG" data-id="lGbzyKWkiio">
+                                    <div class="desc vungChon" target="_top" data-toggle="modal" data-target="#myModal" data-id="lGbzyKWkiio">TÌNH ĐƠN PHƯƠNG</div>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="videothumbnail">
+                                <span data-toggle="tooltip" data-placement="top" title="Click to listen on youtube">
+                                    <img class="thumbnail vungChon" data-toggle="modal" data-target="#myModal" src="https://i.ytimg.com/vi/w22FWJ9v4HY/hqdefault.jpg" alt="999 ĐOÁ HỒNG" data-id="w22FWJ9v4HY">
+                                    <div class="desc vungChon" target="_top" data-toggle="modal" data-target="#myModal" data-id="w22FWJ9v4HY">999 ĐOÁ HỒNG</div>
+                               </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="videothumbnail">
+                                <span data-toggle="tooltip" data-placement="top" title="Click to listen on youtube">
+                                    <img class="thumbnail vungChon" data-toggle="modal" data-target="#myModal" src="https://i.ytimg.com/vi/wXsBaFCfXb0/hqdefault.jpg" alt="ĐI QUA MÙA HẠ" data-id="wXsBaFCfXb0">
+                                    <div class="desc vungChon" target="_top" data-toggle="modal" data-target="#myModal" data-id="wXsBaFCfXb0">ĐI QUA MÙA HẠ</div>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="videothumbnail">
+                                <span data-toggle="tooltip" data-placement="top" title="Click to listen on youtube">
+                                    <img class="thumbnail vungChon" data-toggle="modal" data-target="#myModal" src="https://i.ytimg.com/vi/5mYA4WswGdw/hqdefault.jpg" alt="BA KỂ CON NGHE" data-id="5mYA4WswGdw">
+                                    <div class="desc vungChon" target="_top" data-toggle="modal" data-target="#myModal" data-id="5mYA4WswGdw">BA KỂ CON NGHE</div>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="menu-genre">
+            <h2 class="text-genre">
+                <a href="genre_indie.html">
+                    <img width="25px" height="25px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEX///8AAADe3t7Hx8f8/Pz39/fj4+OsrKy8vLyMjIzm5uaHh4fQ0NDLy8vFxcXq6uqWlpbW1tafn5+oqKhubm5VVVVAQEBcXFwLCwswMDA4ODjw8PCBgYG2trZFRUV0dHQnJyceHh4XFxdpaWlgYGBWVlYZGRlNTU2SkpI6OjoxMTFxLqGJAAAKsUlEQVR4nO2daWOqOhCGwaLSUq1La23FrZvW//8DbzGZbCQBgQsz3Pt8ORVoz7wSksySEARtMZws9qdjGIbH034xiVr7f9sifg11vqZdm9Qk0WId5vlYdm1XY2wt8q6s465Na4SnnUvgHy+brs2rz9SjL2PStYF1mRUIDEPiT+O9rmaVnmfndKUfXHRtZB0WqpJkDoNgNE/UE9tObaxFLFWsTRljReJjJ9Y1wEa5f/mzUSpPD9s3rhHkMGHvMGU3+9qyZQ0h2+GD44qBuILmFE6Y/+S8ZCQe0xbtagwxEvrGdNEXjVuzqzk8nYzCnl91aMWmRonLtb8Ivoh5O2Y1yFduOI/m4/Pz6+n1+TxW5MCkIO3AxlpExi18WvyGKr+LJ/3CsDNTKzLhdp+vn+5ewjzfrAuCgX/UpbkVgJ508Pfz45tFX8Yla63wXVCbncJj+Pfjs0Nfxl420/uuTb4R7iG9BIMPj8AwPI6Cd/bTV9cm3wjXlU7c4jgTPiSeujb5NqDpvetqPk5fn19m3ObC/nnr2uYbsd0tcZc28ZfldJfmVsDaIJXg4XCRO9udsZWwP3Pq1Cwy+9jObK2GXaE+rMf6ua5MrYiuS05pBupFo74ofAiG8oPmzT/0Q+FdoMYr+EyVM+mDQjYbU565k5qrSOgrBPdpqdytse1CsgqFy6CGgC8ydrMkr1Ae0gaHE4z+EXWFar8yDzVmLIyaEleoBZg2eiQjvNxPIqm7K1Mr4jD7HJocP2krzDl9g0tOI22Fn/kzy34p/LacihyZ79ZtrAeYba8nWdrqa1q2sC7Cbkfyc/LZG4XOENpwmq57odDRThlP05ceKPQm6YfrPij0hXrVisXWbGsG9QFzt1Otpq9F65pA60Nc7XQY9kUha6fDeTxL0jRNZvGcaX7tjcIwHm73eortso+HPYomlqNrk2/kf4X0FfKR/P5QKOzAa1CplUUducLHQoWPPGR66NrkG+Gp0U8zi/9z/NEPPAfcy/jt2uQb+WZmr2S08JBuByzavRls96L1RgEPT9mcZcykQsAoeyRfxmaB4sP49Hf8YyS+AmpFURDhzoLbj1P7qorNNCt/vuNXUqungdTgvvBKeFCp1USJAbFokZqYfbdiVZNA2qxoNQXEiP1lqBgRwXp/Hb64hQPvZSiBlTH+ai4+qoS7lqxqEuEb+dqpqKohWawvHMI75yVixcV7i3Y1h5ySugI10gWmV+V9ZS8E2BuqzF9Qm88IjkLCKr9sZiQX6R1at6wp1IKgVNf4sFfOuRfVoEfL3O+WIzY2DkdLbZEl0YeQYTrAb7uXnVnXTlpgsDiGRRwpr5J9tCVC86zJriF17jSQg5pvyImLlQlIbq7wdINAmgOGbamTG4IrgZWh8PcEyy5WuwwYDN9PShUYvTFDxEmzYlIYFtm8BqY6WRcqajKLAzqYmCY7MU5cRwKIpzFHHkqir16VqINe7xK3m4WKqVYpw26NR6EeFP/EL3JrpGJYMbBP4Z3+C2+4x8a5sZILNPkUDsxfWSHudBLT2EoKjQULiNjYtkuqpDA8odwKZGSxtKpClHMcbYFPuIZCkvIKX3VHBN0WWRvVuvuBGOPLK3wMBtqeS8gaanSUps2yA7qmMgqv44pSPowshCpXvfId2G5XyD5tTuIvoZrHSV8XOvqK9zBQtwdDtJWbrMATm69VvYeBkstAVH8iFvbMxKEaCuWyEzQxKtGPKom0OgplzSKWXU5hsqa2qloKRYUKlpsY5m2s0dNkQBALyT4LkATU1jjVUwhVREhy35Bj0dK4NRXCTZwFGID5pHawpkJo+asW7C8E4qJ6lrOuQohtYJidQoPSaw3qKtxqv9EtsJ5Qd3fqKgRvE0O4X1YhqtRVCBNBDLsN8ifGGLrqKoRtmDB0pnywMNy52gp5phhDlUb679zDAx6F3J/70I821Uox7OIG7pw+cjXV02DY7RvGQz1SXVchJOcwjBZgof5t11UILQNDbTQ4c/r2CXUVQvy8BQHFQHRMm9TUVAiT3ZdWFBQB0zat26upEMIGGKY0SphG7U3rKRR/EklsHwJHagi3nkLwnbDs+ClS8Ur1Vi2Ftj/YLSLzK9tpHYWijaLw8K+I7/xNuFA1FA5FKQCaW6iEcC8gsbpCKdCyfU9nyMTFmk/eKitUam4xxGgESh0i81mrKlSSpMhKaxTLPrKKmImmqaTCaKxkujF49xpqJdQ6neixsjIKt3dq+T6u/Cgjvy3SbQp1EApUsogNKMTg2lsYW0ytphBtbdtolbOVebAT7RNEeyfaJ8kJYbmQIHcbZ+OMRPsEJSWJ9gnIvfsKG2PXqx7K8Y5dX8Y8LbeQJM9PgiERU4pBvC/WY7CPMUSdylO8p4kJIkeiFPNiSQaIK4Ot2GcqPsg8gpxNsSQDJEGn8nC7v4IoikRByjzKgBY8vZ5T3rlDi2/VcJjT6Gtm2JyGf6C38GkmblQg2yyLcUAe4Nou4fZiKfAqDzRFFpdn0zZI3rC0C/MfICdAraMJ5GJ8ZvryqK6G2b6FByYXvohDBxbWBeIasGuJ3lfCJ/BGsC4i8SHGC98TJhwLVHG1soipqbteW+xtgjJoUYgc9F0TMjl5JTfcM6RvW/Q+YHpDBUeu1bN1JDLESnELJYayYP3NjGBPlaWYRNtohuolXsZSyNNSXWpKzW/S0NfMHtJlHMfL9Kgf7drIWuTDi3nw5EGrUGZjBRwVJVV5LRZI0G9SsadrdDClem+Hz9zs75PlR2nO2AA+qv9EW/OJ/N5GfEdhpHmmkkCJ4d+PwzhZsWD4epXEmS/Bz5Gdsl2Bmjco0RhunjbgKEEwA0ORbHUgF2Vz/zAtOKgO1GjYMoIwa8VQBlwdPfmrY1laSRAINNnSLjAtJz3xFils232C+0srqWYC4W3bJrrg4uc3/qQE9Ca23DUUFWGuSyjGtzAExkqSgUQBjOq2IjUIVLVuVLNwFbYd15N+KORlGbYlaLxK7MNyihI8UGPzkLhndWjZoqbhgRqbH8/9f7rBUoZHxs4tnhK8Kdo2uHhzN2BKeLqTD3cnRAnPkOAZSChxLlSIrmL9RuyrhDNgQkc7TCOn1/n0EiRQKRSU+nC7SD7HihJuN9fnHFPCHarwBTgo4dgxIfAHqSgBT1s+ZOgLNFLCHfb1BYsp4Q7dmwF/qoDC/Li+6IlC8crV3AmiL1jN43Tye+LiCyc/n8rmCXDalRgZvAY4vzsC9/5Plt+hBa9oz78p9sV1ghrOxuhsvtRwdiieOCMtoMYydyJ0DSPUWBQopO7i/xcUuibY/ajEyHDlQftRiZHhcnT7UYmRAcEKM4zRj0qMDFcYY+K4t/SAkJoZNIQwI+1akwxXNUY/KjEyXNUY7nA/ObgSMwHTk0qMDMf80zlfpQdXYqYJe1JrkuHwknoTpnFWY/AgBv0wjbMaoyeVGBm8OV6Mwxd746VIan/gjuww9UqMv2npjEsx6014rclxRnpiOjgr6w/1/EQkTxzOREXO7/XtovTp2VA7t74n50TNk2NoYFxhnj4mpEQ+m/Y7R3zfJYhZ5q1fmWnCKPfaWUpRqdymdM/W1Qi5O43spY4eforlMQyRPy3aWA9lbez+zp/FjtR9WelkaSBysS/3FkohklBE4+F5fUhuKXZ6TA7r539H4D9CeG+fMUGLkQAAAABJRU5ErkJggg==">
+                    <span class="list">INDIE</span>
+                </a>
+                <hr id="line">
+            </h2>
+            <div class="menu-genre-inner">
+                <div class="menu-list">
+                    <ul style="list-style:none">
+                        <li>
+                            <div class="videothumbnail">
+                                <span data-toggle="tooltip" data-placement="top" title="Click to listen on youtube">
+                                    <img class="thumbnail vungChon" data-toggle="modal" data-target="#myModal" src="https://i.ytimg.com/vi/Csuk1Wm5W0E/hqdefault.jpg" alt="MỘT ĐÊM SAY" data-id="Csuk1Wm5W0E">
+                                    <div class="desc vungChon" target="_top" data-toggle="modal" data-target="#myModal" data-id="Csuk1Wm5W0E">MỘT ĐÊM SAY</div>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="videothumbnail">
+                                <span data-toggle="tooltip" data-placement="top" title="Click to listen on youtube">
+                                    <img class="thumbnail vungChon" data-toggle="modal" data-target="#myModal" src="https://i.ytimg.com/vi/AiD1a2fFFLw/hqdefault.jpg" alt="KHÔNG SAO MÀ EM ĐÂY RỒI" data-id="AiD1a2fFFLw">
+                                    <div class="desc vungChon" target="_top" data-toggle="modal" data-target="#myModal" data-id="AiD1a2fFFLw">KHÔNG SAO MÀ EM ĐÂY RỒI</div>
+                               </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="videothumbnail">
+                                <span data-toggle="tooltip" data-placement="top" title="Click to listen on youtube">
+                                    <img class="thumbnail vungChon" data-toggle="modal" data-target="#myModal" src="https://i.ytimg.com/vi/I3RICWXA_3U/hqdefault.jpg" alt="ANH ĐÁNH RƠI NGƯỜI YÊU NÀY" data-id="I3RICWXA_3U">
+                                    <div class="desc vungChon" target="_top" data-toggle="modal" data-target="#myModal" data-id="I3RICWXA_3U">ANH ĐÁNH RƠI NGƯỜI YÊU NÀY</div>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="videothumbnail">
+                                <span data-toggle="tooltip" data-placement="top" title="Click to listen on youtube">
+                                    <img class="thumbnail vungChon" data-toggle="modal" data-target="#myModal" src="https://i.ytimg.com/vi/YXkp77tR9vw/hqdefault.jpg" alt="TRỜI GIẤU TRỜI MANG ĐI" data-id="YXkp77tR9vw">
+                                    <div class="desc vungChon" target="_top" data-toggle="modal" data-target="#myModal" data-id="YXkp77tR9vw">TRỜI GIẤU TRỜI MANG ĐI</div>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="menu-genre">
+            <h2 class="text-genre">
+                <a href="genre_nhacKhongLoi.html">
+                    <img width="22px" height="22px" src="data:image/png;base64,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">
+                    <span class="list">INSTRUMENTAL MUSIC</span>
+                </a>
+                <hr id="line">
+            </h2>
+            <div class="menu-genre-inner">
+                <div class="menu-list">
+                    <ul style="list-style:none">
+                        <li>
+                            <div class="videothumbnail">
+                                <span data-toggle="tooltip" data-placement="top" title="Click to listen on youtube">
+                                    <img class="thumbnail vungChon" data-toggle="modal" data-target="#myModal" src="https://i.ytimg.com/vi/90xA-KlSAoQ/hqdefault.jpg" alt="WE DON'T TALK ANYMORE" data-id="90xA-KlSAoQ">
+                                    <div class="desc vungChon" target="_top" data-toggle="modal" data-target="#myModal" data-id="90xA-KlSAoQ">WE DON'T TALK ANYMORE</div>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="videothumbnail">
+                                <span data-toggle="tooltip" data-placement="top" title="Click to listen on youtube">
+                                    <img class="thumbnail vungChon" data-toggle="modal" data-target="#myModal" src="https://i.ytimg.com/vi/aTgXgN9fOsk/hqdefault.jpg" alt="ATTENTION" data-id="aTgXgN9fOsk">
+                                    <div class="desc vungChon" target="_top" data-toggle="modal" data-target="#myModal" data-id="aTgXgN9fOsk">ATTENTION</div>
+                               </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="videothumbnail">
+                                <span data-toggle="tooltip" data-placement="top" title="Click to listen on youtube">
+                                    <img class="thumbnail vungChon" data-toggle="modal" data-target="#myModal" src="https://i.ytimg.com/vi/i459z2NAAXc/hqdefault.jpg" alt="FLAMING" data-id="i459z2NAAXc">
+                                    <div class="desc vungChon" target="_top" data-toggle="modal" data-target="#myModal" data-id="i459z2NAAXc">FLAMING</div>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="videothumbnail">
+                                <span data-toggle="tooltip" data-placement="top" title="Click to listen on youtube">
+                                    <img class="thumbnail vungChon" data-toggle="modal" data-target="#myModal" src="https://i.ytimg.com/vi/H2UStJKuZ8g/hqdefault.jpg" alt="CANON ROCK" data-id="H2UStJKuZ8g">
+                                    <div class="desc vungChon" target="_top" data-toggle="modal" data-target="#myModal" data-id="H2UStJKuZ8g">CANON ROCK</div>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+
+                <div class="modal-body">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen="allowfullscreen" allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="genre.js"></script>
+</body>
+
+</html>

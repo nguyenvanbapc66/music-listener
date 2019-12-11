@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Artist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div style="text-align: center;">
+            <a id="home" href="file:///C:/Users/ACER/Desktop/VS%20codes/Website%20Music/indexArtist.html" > <h1>Nghệ sĩ</h1> </a>
+            <!-- <h1><button class="button" id="home" onclick="goBack()">Nghệ sĩ</button></h1> -->
+        </div>
+        <div>
+            <strong>Danh sách các nghệ sĩ:    <button onclick = "display(event)" style="display:none;">Back</button></strong>
+        </div>
+        <div id="list-artists;" style="display: inline-block; border-collapse: collapse;">
+            <ol>
+                <li id="1" ><button class="button" onclick = "getInformation1()"; >Sơn Tùng M-TP</button></li>
+                <li id="2" ><button class="button" onclick = "getInformation2()"; >Soobin Hoàng Sơn</button></li>
+                <li id="3" ><button class="button" onclick = "getInformation3()"; >Phan Mạnh Quỳnh</button></li>
+                <li id="4" ><button class="button" onclick = "getInformation4()"; >Binz</button></li>
+            </ol>
+
+        </div>
+    </div>
+
+    <script src="CodeArtist.js"></script>
+</body>
+
+</html>
